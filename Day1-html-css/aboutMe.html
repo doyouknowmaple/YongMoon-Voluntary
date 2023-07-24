@@ -15,19 +15,30 @@
     div.main_aboutMe{display: flex; flex-direction: column; align-items: center; min-height: 70vh; padding: 50px; background-color: white;}
 
     p.title{display: flex; flex-direction: row; justify-content: center; padding: 15px; margin-bottom: 4px; background-color: white; font-size: larger;}
+    img#profile{width: 150px; border-radius: 100px; border: 2px solid black; margin-bottom: 10px;}
 
-
+    p {
+      font-size:20px;
+      color: black;
+      background-color: white;
+      
+    }
 
   </style>
   <title>나만의 웹페이지</title>
   <meta charset="utf-8">
-  
+ 
+
+
 </head>
 <body>
   <div class="contents">
-    <h1 class="title">나만의 웹페이지</h1>
+    <!-- h1 태그를 사용하여 웹페이지의 제목을 넣어주세요! (class는 "title") -->
+      <h1 class="title"><strong>나만의 웹페이지</strong></h1>
+
 
   <div class="nav">
+    <!-- nav바에 들어갈 목차를 만들어주세요! (ul, li 태그 사용)-->
     <ul>
       <li><a href="aboutMe.html">About Me</a></li>
       <li><a href="aboutLike.html">About Like</a></li>
@@ -37,10 +48,13 @@
 
     </ul>
   </div>
-  
+
   <div class="main_aboutMe">
-    <!-- 이미지 넣기와 p 태그를 사용하여 나의 취미 혹은 좋아하는 것에 대해 소개해주세요! -->
+    <img src="profile.jpg" width=647px height=647px> </img>
+    <p><strong>이름:고수민</strong></p>
+    <p><strong>학번:10701</strong></p>
   </div>
-  </div>
-  
+</div>
+
+
 </body>
