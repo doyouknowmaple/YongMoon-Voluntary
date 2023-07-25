@@ -5,16 +5,22 @@
     <style>
         div{
             border: 1px solid blue;
-            padding:10px;
-            width: 200px;
+            padding:6px;
+            width: 360px;
             line-height: 1.5em;
         }
     </style>
 </head>
 <body>
     <script>
-        var num = parseInt(prompt("출력할 구구단의 숫자를 입력"));
+        var num=window.prompt("입력");
         document.write("<div>");
+            let i=0;
+          for(;i<9;i++)
+            {
+            	document.write(num+"*"+i+"="+(i+1)*num,"ㅤ");
+          
+             }
         // 입력받은 num에 1부터 9까지 곱한 값을 document.write를 이용해 html화면에 출력하는 코드를 짜주세요!
         // 힌트 : for문 내에 document.write()를 넣어주세요.
         // 각 요소는 +로 연결할 수 있고 ""안에 적는 글은 문자열로, 변수는 담긴 내용으로, *는 곱셈의 결과로 출력이 됩니다. 
@@ -26,4 +32,3 @@
         document.write("</div>");
     </script>
 </body>
-</html>
