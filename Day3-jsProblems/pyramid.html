@@ -40,8 +40,8 @@
   </body>
   <script>
     // querySelector() 안에 알맞은 값을 넣어주세요.
-    const input = document.querySelector("");
-    const result = document.querySelector("");
+    const input = document.querySelector(".input");
+    const result = document.querySelector(".result");
 
     function submit() {
       // 입력된 값을 n에 저장
@@ -50,11 +50,232 @@
       result.innerHTML = "";
 
       // 함수를 구현해주세요!
-      for (let i = 0; i < n; i++) {
-        
+     for(let i=Math.trunc(n/2);i>0;i--)
+     {
+      for(let j=Math.trunc(n/2);j>0;j--)
+      {
+        if(i+j>Math.trunc(n/2)-1)
+          
+          <p>"*".repeat(j)</p>
+        else 
+          <p>bgr</p>
       }
+     }
     }
+       
+
+      
+   
     const submitBtn = document.querySelector(".submit");
     submitBtn.addEventListener("click", submit);
   </script>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>별*로 피라미드 짓기</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+      }
+
+      main input {
+          margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <input class="input" type="text" placeholder="원하는 피라미드 층수" />
+      <input class="submit" type="button" value="submit" />
+      <div class="result"></div>
+      <p>힌트: "*".repeat(5) -> "*****"</p>
+    </main>
+  </body>
+  <script>
+    // querySelector() 안에 알맞은 값을 넣어주세요.
+    const input = document.querySelector(".input");
+    const result = document.querySelector(".result");
+
+    function submit() {
+      // 입력된 값을 n에 저장
+      let n = 
+      // 출력된 결과값 초기화
+      result.innerHTML = "";
+
+      // 함수를 구현해주세요!
+     for(let i=Math.trunc(n/2);i>0;i--)
+     {
+      for(let j=Math.trunc(n/2);j>0;j--)
+      {
+        if(i+j>Math.trunc(n/2)-1)
+          
+          console.log("*".repeat(j));
+        else 
+          console.log(brg);
+      }
+     }
+
+    }
+    
+    const submitBtn = document.querySelector(".submit");
+    submitBtn.addEventListener("click", submit);
+  </script>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>별*로 피라미드 짓기</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    main {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+    }
+
+    main input {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <input class="input" type="text" placeholder="원하는 피라미드 층수" />
+    <input class="submit" type="button" value="submit" />
+    <div class="result"></div>
+    <p>힌트: "*".repeat(5) -> "*****"</p>
+  </main>
+
+  <script>
+    // querySelector() 안에 알맞은 값을 넣어주세요.
+    const input = document.querySelector(".input");
+    const result = document.querySelector(".result");
+
+    function submit() {
+      // 입력된 값을 n에 저장
+      let n = parseInt(input.value);
+      // 출력된 결과값 초기화
+      result.innerHTML = "";
+
+      // 함수를 구현해주세요!
+      let pyramidHTML = "";
+      for (let i = n   ; i > 0; i--) {
+        pyramidHTML += "&nbsp;".repeat(n - i);          
+        pyramidHTML += "*".repeat(2 * i - 1);
+        pyramidHTML += "&nbsp;".repeat(n - i);
+        pyramidHTML += "<br>";
+      }
+      result.innerHTML = pyramidHTML;
+    }
+
+    const submitBtn = document.querySelector(".submit");
+    submitBtn.addEventListener("click", submit);
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>별*로 피라미드 짓기</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    main {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+    }
+
+    main input {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <input class="input" type="text" placeholder="원하는 피라미드 층수" />
+    <input class="submit" type="button" value="submit" />
+    <div class="result"></div>
+    <p>힌트: "*".repeat(5) -> "*****"</p>
+  </main>
+
+  <script>
+    // querySelector() 안에 알맞은 값을 넣어주세요.
+    const input = document.querySelector(".input");
+    const result = document.querySelector(".result");
+
+    function submit() {
+      // 입력된 값을 n에 저장
+      let n = parseInt(input.value);
+      // 출력된 결과값 초기화
+      result.innerHTML = "";
+
+      // 함수를 구현해주세요!
+      let pyramidHTML = "";
+      for (let i = 0; i < n; ++i) {
+        pyramidHTML += "&nbsp;".repeat(n - i - 1);
+        pyramidHTML += "*".repeat(i * 2 + 1);
+        pyramidHTML += "&nbsp;".repeat(n - i - 1);
+        pyramidHTML += "<br>";
+      }
+      result.innerHTML = pyramidHTML;
+    }
+
+    const submitBtn = document.querySelector(".submit");
+    submitBtn.addEventListener("click", submit);
+  </script>
+</body>
+</html>
+
