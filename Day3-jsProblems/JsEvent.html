@@ -41,8 +41,11 @@
 
     <ul id="education-list"></ul>
 
-    <script>
+    <script>    
         function addEducation() {
+
+            var schoolInput=document.getElementById("school-input").value;
+            var degreeInput=document.getElementById("degree-input").value;
 
             // 이 부분에 document.getElementById를 이용하여 학교, 학위를 입력할 수 있는 변수를 선언하세요!
 
@@ -55,6 +58,12 @@
                 document.getElementById("school-input").value = "";
                 document.getElementById("degree-input").value = "";
 
+                alert("등록되었습니다.");
+            }
+        
+            else
+            {
+                alert("학력 정보를 모두 입력해주세요");
                 // alert를 이용하여 등록되었다는 것을 출력하고, 잘못된 정보가 입력되면 "학력 정보를 모두 입력해주세요."라고 출력하세요!
             } 
         }
